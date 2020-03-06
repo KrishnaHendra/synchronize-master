@@ -11,7 +11,7 @@
 </head>
 <body>
     
-<h4>DATA MEMBER</h4>
+<h1 class="text-center">DATA MEMBER</h1>
 
 <table class="tab;e table-bordered table-striped">
     <tr style="background-color: #c2c2c2;">

@@ -7,7 +7,7 @@
 									<h4>Transaksi Masuk</h4>
 								</div>
 								<div class="table-responsive">
-									<table class="table table-hover zero-configuration">
+									<table class="table table-hover table-striped zero-configuration">
 										<thead>
 											<tr style="background-color: #324cdd; color:white;">
 												<th class="text-center">#</th>
@@ -26,9 +26,13 @@
 												<td class="text-center"><?= $a['nama_user']; ?></td>
 												<td class="text-center"><?= $a['qty'] ?></td>
 												<td class="text-center">
-                                                    <button type="button" class="btn btn-sm btn-warning">
+												<select name="" id="" class="btn btn-sm btn-dark">
+													<option value="" style="text-transform: uppercase;"><?= $a['status'] ?></option>
+													<option value="">SELESAI</option>
+												</select>
+                                                    <!-- <button type="button" class="btn btn-sm btn-warning">
                                                         <?= $a['status'] ?>
-                                                    </button>
+                                                    </button> -->
                                                 </td>
 												<td class="text-center"><?= date('d M Y',$a['tanggal'] ) ?></td>
 											</tr>
