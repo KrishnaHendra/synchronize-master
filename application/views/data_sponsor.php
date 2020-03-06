@@ -12,7 +12,6 @@
 											<tr>
 												<th>#</th>
 												<th>Nama Sponsor</th>
-												<th>Keterangan</th>
 												<th>Gambar</th>
 												<th class="text-center">Hapus</th>
 											</tr>
@@ -23,7 +22,6 @@
 											<tr>
 												<th><?= $no++; ?></th>
 												<td><?= $s->nama_sponsor; ?></td>
-												<td><?= $s->keterangan; ?></td>
 												<td><img src="<?php echo base_url('/assets/images/sponsor/'.$s->logo_sponsor) ?>" height="30px" /></td>
 												<td class="text-center"><a class="btn btn-sm btn-danger" href="<?=base_url('sponsor/delete_sponsor');?>/<?= $s->id_sponsor ?>" onClick="return confirm('Yakin?');"><i class="fa fa-fw fa-trash"></i></a></td>
                                                 <!-- <td class="text-center"><button class="btn btn-sm btn-danger" data-toggle="modal" data-target="#modalDelete"><i class="fa fa-fw fa-trash"></i></button></td> -->
