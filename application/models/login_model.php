@@ -34,6 +34,22 @@ class login_model extends CI_Model {
         
     }
 
+    public function registration(){
+        $data=[
+            'nama_user' => $this->input->post('nama'),
+            'email' => $this->input->post('email'),
+            'password' => $this->input->post('password'),
+            'telepon' => $this->input->post('telepon'),
+            'tgl_lahir' => $this->input->post('tgl_lahir'),
+            'created_at' => time()
+        ];
+        $this->db->insert('user',$data);
+        $this->session->set_flashdata('notif','<div class="alert alert-info alert-dismissible" role="alert">
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+		<i class="fa fa-check-circle"></i> Akun berhasil dibuat, Silahkan Login!
+		</div>');
+    }
+
 }
 
 /* End of file login_model.php */

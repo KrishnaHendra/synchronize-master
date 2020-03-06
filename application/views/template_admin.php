@@ -194,16 +194,36 @@
                         </a>
                     </li>
                     <li>
+                        <a href="<?= base_url('admin') ?>" aria-expanded="false">
+                            <i class="fa fa-lock menu-icon"></i><span class="nav-text">Data Admin</span>
+                        </a>
+                    </li>
+                    <li>
                         <a href="<?= base_url('member') ?>" aria-expanded="false">
                             <i class="icon-user menu-icon"></i><span class="nav-text">Data Member</span>
                         </a>
                     </li>
-                    <!-- <li>
-                        <a href="<?= base_url('admin') ?>" aria-expanded="false">
-                            <i class="fa fa-fw fa-user"></i><span class="nav-text">Data Admin</span>
-                        </a>
-                    </li> -->
                     <li>
+                        <a href="<?= base_url('guestar') ?>" aria-expanded="false">
+                            <i class="fa fa-address-book menu-icon"></i><span class="nav-text">Data Guest</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="<?= base_url('admin/tiket') ?>" aria-expanded="false">
+                            <i class="fa fa-ticket menu-icon"></i><span class="nav-text">Data Tiket</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="<?= base_url('deje') ?>" aria-expanded="false">
+                            <i class="fa fa-heart menu-icon"></i><span class="nav-text">Data Talent</span>
+                        </a>
+                    <li>
+                        <a href="<?= base_url('data_sponsor') ?>" aria-expanded="false">
+                            <i class="icon-badge menu-icon"></i><span class="nav-text">Data Sponsor</span>
+                        </a>
+                    </li>
+                   
+                    <!-- <li>
                         <a class="has-arrow" href="javascript:void()" aria-expanded="false">
                             <i class="icon-speedometer menu-icon"></i><span class="nav-text">Data</span>
                         </a>
@@ -213,9 +233,9 @@
                             <li><a href="<?= base_url('admin/tiket') ?>">Data Tiket</a></li>
                             <li><a href="<?= base_url('deje') ?>">Data DJ</a></li>
                             <li><a href="<?= base_url('data_sponsor') ?>">Data Sponsor</a></li>
-                            <!-- <li><a href="./index-2.html">Home 2</a></li> -->
+                           
                         </ul>
-                    </li>
+                    </li> -->
                     <li>
                         <a href="<?= base_url('transaksi') ?>" aria-expanded="false">
                             <i class="fa fa-fw fa-cart-plus"></i><span class="nav-text">Transaksi Masuk <sup class="badge badge-info"><?= $this->db->count_all('transaksi'); ?></sup></span>

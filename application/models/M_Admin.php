@@ -46,4 +46,10 @@ class M_Admin extends CI_Model {
         $this->db->from('user');
         return $this->db->get()->result_array();
     }
+
+    public function cetak_member(){
+        $this->db->select('*');
+        $this->db->from('user');
+        return $this->db->get()->result_array();
+    }
 }

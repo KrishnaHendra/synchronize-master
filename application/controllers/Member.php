@@ -20,6 +20,11 @@ class Member extends CI_Controller {
         $this->load->view('template_admin',$data);
     }
 
+    public function cetak(){
+        $data['member']=$this->admin->cetak_member();
+        $this->load->view('cetak_member',$data);
+    }
+
 }
 
 /* End of file Controllername.php */

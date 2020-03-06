@@ -7,7 +7,7 @@
                             <div class="card-body">
                                 <h3 class="card-title text-white">Jumlah Guest Star</h3>
                                 <div class="d-inline-block">
-                                    <h2 class="text-white">4</h2>
+                                    <h2 class="text-white"><?= $this->db->count_all('guest'); ?></h2>
                                     <p class="text-white mb-0"><?= date('d M Y') ?></p>
                                 </div>
                                 <span class="float-right display-5 opacity-5"><i class="fa fa-star"></i></span>
@@ -19,7 +19,7 @@
                             <div class="card-body">
                                 <h3 class="card-title text-white">Tiket Terjual</h3>
                                 <div class="d-inline-block">
-                                    <h2 class="text-white">2567</h2>
+                                    <h2 class="text-white"><?= $this->db->count_all('transaksi'); ?></h2>
                                     <p class="text-white mb-0"><?= date('d M Y') ?></p>
                                 </div>
                                 <span class="float-right display-5 opacity-5"><i class="fa fa-money"></i></span>
@@ -31,7 +31,7 @@
                             <div class="card-body">
                                 <h3 class="card-title text-white">Jumlah Customer</h3>
                                 <div class="d-inline-block">
-                                    <h2 class="text-white">3543</h2>
+                                    <h2 class="text-white"><?= $this->db->count_all('user'); ?></h2>
                                     <p class="text-white mb-0"><?= date('d M Y') ?></p>
                                 </div>
                                 <span class="float-right display-5 opacity-5"><i class="fa fa-users"></i></span>
